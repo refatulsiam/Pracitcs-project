@@ -1,0 +1,28 @@
+/* **Step 1**: Html file will have a `‘p’` tag and a `button`
+    
+**Step 2**: The `p` tag will show the count which is initially 0. (initially the value in local storage is 0)
+
+**Step 3**: Every time after clicking the number will be increased by 1. & the result will be show in the p tag.
+
+**Step 4**; With every click on the button, the result will be stored in local storage also.
+
+**Step 5**: Now the result is stored in local storage. So, if you reload the page or close the tab & open again, the result of “the count” is not 0. Rather it will show the value from the local storage without reset.
+*/
+
+
+let num = 0;
+const clickBtn = () => {
+  let number = num++;
+  displayCountNumber(number);
+};
+
+const displayCountNumber = (count) => {
+  document.getElementById("count").innerText = count;
+  localStorage.setItem("count", count);
+};
+
+const getCount = () => {
+  let result = localStorage.getItem("count", count);
+  displayCountNumber(result);
+};
+getCount();

@@ -1,0 +1,6 @@
+- Clear Your Local storage
+- Set a local item. key: name, value: Shakib Khan
+- Set a local storage item. key: age, value: 40
+- Get the local storage item you have set
+- Remove the local storage key ‘name’ & key ‘age’
+- Set a object as local storage item. Then object is{ firstName: ‘Abraham’, lastName: ‘Linkon’ }
